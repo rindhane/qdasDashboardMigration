@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+    <!--
+        https://stackoverflow.com/questions/17493601/what-is-the-code-to-remove-this-symbol-%C3%82-in-html
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+	/>
+    <link rel="stylesheet" href="/CSS/master.css">
+    <link rel="stylesheet" href="./individual.css">
+    <title>QDas Dashboard</title>
+    <link rel="icon" href="/favicon.png">
+</head>
+<body onload="console.log('loaded');">
+    <header>
+        <div class="logo-container">
+            <img src="/img/client.png" alt="logo">  
+        </div>
+        <div class="header-title">
+            <div class="titleContent">Q-DAS Traceability Dashboard</div> 
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link-outer "><a class="nav-link" href="/Home">Home Page</a></li>
+                <li class="nav-link-outer hidden"><a class="nav-link" href="/OperationCharacteristicStats">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="columnContainer" id="MasterElem">
+            <!--
+            <div class="AppContainer">
+                <div class="table-container" role="table" aria-label="Destinations">
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">Bore Radius </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/fullCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">10.0</div>
+                        <div class="flex-row " role="cell">0.8</div>
+                        <div class="flex-row " role="cell">1.3</div>
+                        <div class="flex-row " role="cell">1.6</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                            <div class="flex-row first" role="cell">X-Coordinate </div>
+                            <div class="flex-row " role="cell">
+                                <img src="./img/fullCircle.svg" />
+                            </div>                        
+                            <div class="flex-row " role="cell">101.8</div>
+                            <div class="flex-row " role="cell">0.065 </div>
+                            <div class="flex-row " role="cell">1.1</div>
+                            <div class="flex-row " role="cell">1.3</div>
+                            <div class="flex-row " role="cell">
+                                <img class="labelImage" src="./img/Ppk.PNG"/>
+                            </div>
+                    </div>
+                    <div class="chartGraph" style="display: block;">
+                        <div class="menuContainer">
+                            <input type="radio" id="firstChart" name="chart_options" value="valueChart">
+                            <label for="">Value/IMR Chart</label><br/> &nbsp; &nbsp; &nbsp;
+                            <input type="radio" id="secondChart" name="chart_options" value=" QCC Chart">
+                            <label for="css">QCC Chart</label><br> 
+                        </div>
+                        <hidingWrapper style="display:none">
+                            <img class="expandImage" src="./img/QdasChart.png"/>
+                        </hidingWrapper>
+                        <hidingWrapper style="display:block">
+                            <img class="expandImage" src="./img/qdasChart2.png"/>
+                        </hidingWrapper>
+                    </div>
+                    <div class="flex-table row">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row first" role="cell">Y-Coordinate </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/fullCircle.svg" />
+                        </div>                        
+                        <div class="flex-row " role="cell">101.8</div>
+                        <div class="flex-row " role="cell">0.78 </div>
+                        <div class="flex-row " role="cell">1.00</div>
+                        <div class="flex-row " role="cell">1.00</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">Z-Coordinate </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/fullCircle.svg" />
+                        </div>                        
+                        <div class="flex-row " role="cell">101.8</div>
+                        <div class="flex-row " role="cell">0.89</div>
+                        <div class="flex-row " role="cell">1.4</div>
+                        <div class="flex-row " role="cell">1.46</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">Vertex Angle </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/halfCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">45</div>
+                        <div class="flex-row " role="cell">40 </div>
+                        <div class="flex-row " role="cell">50</div>
+                        <div class="flex-row " role="cell">44.6</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">SRC Dia </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/emptyCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">17.8</div>
+                        <div class="flex-row " role="cell">0.0043</div>
+                        <div class="flex-row " role="cell">1.13</div>
+                        <div class="flex-row " role="cell">1.09</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">DC Width </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/halfCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">23</div>
+                        <div class="flex-row " role="cell">0.78</div>
+                        <div class="flex-row " role="cell">1.01</div>
+                        <div class="flex-row " role="cell">1.02</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">SC finish </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/emptyCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">1.8</div>
+                        <div class="flex-row " role="cell">0.43</div>
+                        <div class="flex-row " role="cell">1.05</div>
+                        <div class="flex-row " role="cell">1.01</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+                    <div class="flex-table row" role="rowgroup">
+                        <div class="flex-row first" role="cell">OP 60</div>
+                        <div class="flex-row " role="cell">OD Size </div>
+                        <div class="flex-row " role="cell">
+                            <img src="./img/halfCircle.svg" />
+                        </div>
+                        <div class="flex-row " role="cell">45</div>
+                        <div class="flex-row " role="cell">0.43 </div>
+                        <div class="flex-row " role="cell">1.03</div>
+                        <div class="flex-row " role="cell">1.02</div>
+                        <div class="flex-row " role="cell">
+                            <img class="labelImage" src="./img/Ppk.PNG"/>
+                        </div>
+                    </div>
+            </div>
+            -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-client">&copy; 2022 - XYZ Corp Ltd</div>
+        <div class="disclaimer">
+            Powered By : 
+            <img class="footer-logo" src="/img/Hexagon_Q-DAS-Logo-white-small.png"/>
+        </div>
+    </footer>
+</body>
+<script src="/Scripts/preloadUtilities.js"></script>
+<script src="/Scripts/helperFunctions.js"></script>
+<script defer src="./layoutUpdater.js" ></script>

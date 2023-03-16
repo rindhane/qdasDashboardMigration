@@ -10,8 +10,8 @@ public static class Routes{
         //add key-link-reRerouting
         app.MapGet("/", RouteMethods.MoveToHomeScreen);
         app.MapGet("/Home",RouteMethods.pageRedirect);
-        //
-        
+        app.MapGet("/OperationCharacteristicStats",RouteMethods.pageRedirect);
+        app.MapPost("/GetData", RouteMethods.provideSampleData);
         return app;
     }
 }  
